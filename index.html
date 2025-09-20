@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal homepage for Raymond Nayel showcasing web development projects and accessibility-focused design." />
+  <meta name="author" content="Raymond Nayel" />
+  <title>Raymond Nayel | Home</title>
+  <link rel="stylesheet" href="styles/base.css" >
+  <link rel="stylesheet" href="styles/large.css" >
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+  <header>
+
+    <img src="images/logo.svg" alt="Site Logo" width="800px" height="800px" />
+    <span>Raymond Nayel</span>
+    <button  id="ham-btn" class="hamburger">
+    </button>
+</header>
+<nav id="nav-links" class="navigation">
+    <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+  </ul>
+</nav>
+
+  <main>
+    <h1>Home</h1>
+    <div class="about-layout">
+        <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Raymond Nayel, a web developer dedicated to building accessible and responsive digital experiences. 
+            I focus on creating websites that are both visually engaging and functionally robust, especially for youth empowerment and social impact.
+            My approach blends thoughtful design with methodical problem-solving, always aiming for clarity and usability.
+            I’m constantly learning—from mastering C# fundamentals to refining performance and accessibility best practices.
+            Collaboration, feedback, and real-world impact are at the heart of everything I build.</p>
+        </section>
+    
+        <section id="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Raymond Nayel working on a web project" />
+        </section>
+    </div>
+
+   
+    <section id="certificate">
+    <h2>Certificate Courses</h2>
+    <div class="filters">
+        <button class="filter-btn" data-type="all">All Courses</button>
+        <button class="filter-btn" data-type="wdd">WDD Courses</button>
+        <button class="filter-btn" data-type="cse">CSE Courses</button>
+    </div>
+    <div id="courseContainer"></div>
+        <p id="creditTotal"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub" width="16" height="16" />
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" />
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" />
+      </a>
+    </div>
+
+    <p>
+      &copy; <span id="year"></span> | Raymond Nayel | Ghana
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/navigation.js"></script>
+
+  
+
+  
+</body>
+</html>

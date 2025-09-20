@@ -1,0 +1,119 @@
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+.logo-container{
+  display: flex;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 44px auto 44px;
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+  align-items: end;
+}
+
+header img{
+  display: block;
+  width: 100%;
+  height: auto;
+   
+}
+header span{
+  font-size: 1.2rem;
+  color: #3D405B;
+  padding-bottom: 10px;
+}
+
+.hamburger{
+  background: none;
+  border: none;
+  color: #3D405B;
+  cursor: pointer;
+}
+.hamburger::after{
+  content: "\2630";
+  font-size: 2rem;
+}
+.hamburger.show::after{
+  content: "\00D7";
+  font-size: 2rem;
+}
+.navigation{
+  display: none;
+}
+.navigation.show{
+  display: block;
+  background-color: rgb(162, 174, 170);
+  
+}
+.navigation ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a{
+  display: block;
+  padding: 0.8rem 10px;
+  color: #3D405B;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+.navigation li.current{
+  background-color: #eee;
+}
+.navigation a:hover{
+  background-color: #ce9999;
+}
+h1{
+    margin-left: 10px;
+}
+h2{
+  background-color: rgb(169, 169, 198);
+  text-align: center;
+}
+
+#student-photo img {
+  width: 39rem;
+  height: 32rem;
+  border-radius: 8px;
+ 
+}
+#certificate{
+  text-align: center;
+}
+.filters button{
+  width:8rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+
+
+footer{
+  background-color: #eee;
+  padding: 1rem 10px;
+  text-align: center;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+.social-links a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: #ccc solid 1px;
+}
+.social-links img{
+  width: 22px;
+  height: 22px;
+}
+.social-links a:hover{
+  background-color: #ddd;
+}

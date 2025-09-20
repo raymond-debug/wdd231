@@ -1,0 +1,59 @@
+@media  only screen and (min-width:38rem) {
+  header, main, nav, footer{
+    max-width: 900px;
+    margin: 0 auto;
+
+  }
+  .hamburger{
+    display: none;
+  }
+  .navigation{
+    display: block;
+    border-bottom: solid 1px #eee;
+  }
+  .navigation ul{
+    display: flex;
+  }
+  .navigation a{
+    border: none;
+  }
+  .about-layout{ 
+  display: flex;
+ gap: 2rem;
+  padding: 2rem;
+ align-items: flex-start;
+}
+
+  #about{
+  flex: 2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+#student-photo{
+
+  flex: 1; /* Narrower section */
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+#student-photo img {
+  width: 15rem;
+  height: 14rem;
+  border-radius: 8px;
+ 
+}
+#certificate{
+  text-align: center;
+}
+.filters button{
+  width:13rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+}
