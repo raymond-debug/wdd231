@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="This is the homepage of the Bibiani of Chamber Website which displays Upcoming events, current weather, some spotlight businesses and a link for new members">
+    <title>Bibiani Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Bibiani Chamber Commerce homepage">
+    <meta property="og:description" content="Explore our local business members and their services." >
+    <meta property="og:image" content="images/social-preview.jpg" >
+    <meta property="og:url" content="https://yourdomain.com/wdd231/chamber/directory.html" >
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.svg" alt="Site Logo" width="800" height="800">
+        <span>Bibiani Chamber of Commerce</span>
+        <button  id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav class="navigation" id="nav-links">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <h1>Home</h1>
+    <section class="hero">
+      <img src="images/hero.jpg" loading="lazy" alt="Bibiani Chamber Hero Image">
+      <a class="cta" href="join.html">Join the Chamber</a>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Business Networking – Oct 10</li>
+        <li>Local Market Fair – Oct 15</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-data"></div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub" width="16" height="16" >
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" >
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" >
+      </a>
+    </div>
+
+    <p>
+      &copy; <span id="year"></span> | Raymond Nayel | Ghana
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/navigation.js"></script>
+
+  <script src="scripts/weather.js"></script>
+  
+</body>
+</html>

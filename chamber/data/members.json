@@ -1,0 +1,67 @@
+{
+  "members":  [
+    {
+      "name": "Bibiani Tech Solutions",
+      "address": "123 Main St, Bibiani",
+      "phone": "+233 20 111 2222",
+      "website": "https://bibianitech.com",
+      "image": "bibianitech.png",
+      "membership": 3,
+      "description": "Leading IT services provider in Western North."
+    },
+    {
+      "name": "Green Gold Farms",
+      "address": "456 Agri Lane, Bibiani",
+      "phone": "+233 20 333 4444",
+      "website": "https://greengoldfarms.com",
+      "image": "greengold.png",
+      "membership": 2,
+      "description": "Organic farming and produce distribution."
+    },
+    {
+      "name": "Royal Prints & Media",
+      "address": "22 Station Road, Bibiani",
+      "phone": "+233 20 555 6789",
+      "website": "https://royalprintsmedia.com",
+      "image": "royalprints.png",
+      "membership": 1,
+      "description": "Creative printing and digital media services for local businesses."
+    },
+    {
+      "name": "Bibiani Auto Works",
+      "address": "78 Mechanic Street, Bibiani",
+      "phone": "+233 24 987 6543",
+      "website": "https://bibianiautoworks.com",
+      "image": "autoworks.png",
+      "membership": 2,
+      "description": "Reliable vehicle repair and maintenance with certified technicians."
+    },
+    {
+      "name": "Sunrise Bakery",
+      "address": "15 Market Circle, Bibiani",
+      "phone": "+233 26 123 4567",
+      "website": "https://sunrisebakerygh.com",
+      "image": "sunrisebakery.png",
+      "membership": 1,
+      "description": "Fresh bread and pastries baked daily with local ingredients."
+    },
+    {
+      "name": "Western Realty Group",
+      "address": "9 Estate Avenue, Bibiani",
+      "phone": "+233 27 321 4321",
+      "website": "https://westernrealtygh.com",
+      "image": "westernrealty.png",
+      "membership": 3,
+      "description": "Trusted property management and real estate services in Bibiani."
+    },
+    {
+      "name": "EcoClean Services",
+      "address": "34 Sanitation Street, Bibiani",
+      "phone": "+233 23 456 7890",
+      "website": "https://ecocleangh.com",
+      "image": "ecoclean.png",
+      "membership": 2,
+      "description": "Professional cleaning and waste management for homes and offices."
+    }
+  ]
+}

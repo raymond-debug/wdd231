@@ -4,7 +4,17 @@
 }
 .logo-container{
   display: flex;
-  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h2{
+  padding: 0 2px ;
 }
 
 header{
@@ -12,6 +22,7 @@ header{
   grid-template-columns: 44px auto 44px;
   padding: 5px 0 5px 10px;
   border-bottom: solid 1px #ddd;
+  background-color: #b3d8ef;
   column-gap: 8px;
   align-items: end;
 }
@@ -27,11 +38,10 @@ header span{
   color: #3D405B;
   padding-bottom: 10px;
 }
-
 .hamburger{
   background: none;
   border: none;
-  color: #3D405B;
+  color: #333;
   cursor: pointer;
 }
 .hamburger::after{
@@ -42,6 +52,7 @@ header span{
   content: "\00D7";
   font-size: 2rem;
 }
+
 .navigation{
   display: none;
 }
@@ -63,38 +74,92 @@ header span{
   border-bottom: solid 1px #ddd;
 }
 .navigation li.current{
-  background-color: #eee;
+  background-color: #e9d4d4;
 }
 .navigation a:hover{
   background-color: #ce9999;
 }
-h1{
-    margin-left: 10px;
+
+.view-toggle {
+  text-align: center;
+  margin: 1rem;
 }
-h2{
-  background-color: rgb(169, 169, 198);
+button svg {
+  fill: #004d40;
+  transition: fill 0.3s ease;
+}
+
+button:hover svg {
+  fill: #cfcfcb;
+}
+
+#members-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#members-container.list {
+  display: block;
+  padding: 1rem;
+  
+}
+
+.member-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.hero {
+  position: relative;
   text-align: center;
 }
 
-#student-photo img {
-  width: 39rem;
-  height: 32rem;
-  border-radius: 8px;
- 
-}
-#certificate{
-  text-align: center;
-}
-.filters button{
-  width:8rem;
-  height: 3rem;
-  border-radius: 8px;
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
+
+.cta {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e3cb6c;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.spotlights,.weather {
+
+
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.spotlight-card {
+  flex: 1 1 calc(33% - 1rem);
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+}
 
 
 footer{
-  background-color: #eee;
+  background-color: #b3d8ef;;
   padding: 1rem 10px;
   text-align: center;
 }
