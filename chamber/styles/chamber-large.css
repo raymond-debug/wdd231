@@ -17,6 +17,18 @@
   .navigation a{
     border: none;
   }
- 
+ .form-layout {
+    flex-direction: row; /* side-by-side layout for large screens */
+    align-items: flex-start;
+  }
+
+  .form-section {
+    flex: 2; /* form takes more space */
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr); /* two columns for cards */
+  }
+
 
 }

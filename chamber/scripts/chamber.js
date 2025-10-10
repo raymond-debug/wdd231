@@ -31,3 +31,25 @@ loadMembers();
 // Footer Date
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("last-modified").textContent = document.lastModified;
+
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// js/thankyou.js
+function getParam(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name) || "Not provided";
+}
+
+document.getElementById("fname").textContent = getParam("fname");
+document.getElementById("lname").textContent = getParam("lname");
+document.getElementById("email").textContent = getParam("email");
+document.getElementById("phone").textContent = getParam("phone");
+document.getElementById("orgname").textContent = getParam("orgname");
+document.getElementById("timestamp").value = getParam("timestamp");
+
