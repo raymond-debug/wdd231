@@ -1,0 +1,28 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: 'Philo Sofia', sans-serif;
+  color: #005f73;
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.primary {
+  background-color: #005f73;
+}
+
+.secondary {
+  background-color: #94d2bd;
+}

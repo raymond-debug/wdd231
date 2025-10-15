@@ -71,3 +71,5 @@ if (fnameSpan) {
   document.getElementById("orgname").textContent = getParam("orgname");
   document.getElementById("timestamp").textContent = getParam("timestamp");
 }
+visitMessage.js
+

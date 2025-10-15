@@ -11,20 +11,22 @@
     <meta property="og:description" content="Explore our local business members and their services." >
     <meta property="og:image" content="images/social-preview.jpg" >
     <meta property="og:url" content="https://yourdomain.com/wdd231/chamber/directory.html" >
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
 
 </head>
 <body>
     <header>
-        <h1>Bibiani Chamber of Commerce</h1>
+        <img src="images/logo.svg" alt="Site Logo" width="800" height="800">
+        <span>Bibiani Chamber of Commerce</span>
         <button class="hamburger" id="ham-btn"></button>
     </header>
     <nav class="navigation" id="nav-links">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
+        <li class="current"><a href="directory.html" class="active">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="discover.html">Discover</a></li>
     </ul>
     </nav>
     <main>
@@ -49,12 +51,21 @@
         <section id="members-container" class="grid"></section>
     </main>
     <footer>
-        <p>Contact: info@bibianichamber.org | +233 20 123 4567</p>
-        <p>Raymond Nayel | WDD 231</p>
-        <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
-    </footer>
-
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/navigation.js"></script>
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" width="16" height="16" >
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" >
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+            <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" >
+        </a>
+    </div>
+    <p>Contact: info@bibianichamber.org | +233 20 123 4567</p>
+    <p>Raymond Nayel | WDD 231</p>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
+  </footer>
+  <script src="scripts/navigation.js"></script>
 </body>
 </html>
