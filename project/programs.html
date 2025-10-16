@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="This is the programs page of the Youth Empowerment Hub Website which displays available programs users can choose from, and some categories of programs to select from">
+    <meta name="author" content="Raymond Nayel">
+    <title>Youth Empowerment Hub</title>
+    <link rel="icon" href="images/logo.svg" type="image logo">
+    <meta property="og:title" content="Youth Empowerment Hub Programs page">
+    <meta property="og:description" content="Displays all available frograms and some categories of programs we have on our website">
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://raymond-debug.github.io/wdd231/project" >
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 641px)">
+    <script type="module" src="scripts/programs.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.svg" alt="Site Logo" width="250" height="150">
+        <span>Youth EmpowermentHub</span>
+        <button  id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav class="navigation" id="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="programs.html">Programs</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Explore Our Programs</h1>
+            <p>Choose from a variety of skill-building courses designed to empower your future.</p>
+        </section>
+
+        <section class="tabs">
+            <button class="tab active" data-category="all">All</button>
+            <button class="tab" data-category="creative">Creative Skills</button>
+            <button class="tab" data-category="technical">Technical Skills</button>
+            <button class="tab" data-category="business">Business Skills</button>
+        </section>
+
+        <section id="programs-grid" class="grid"></section>
+    </main>
+
+
+    <footer>
+        <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" width="16" height="16" >
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" >
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+            <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" >
+        </a>
+        </div>
+
+        <p>
+        &copy; <span id="year"></span> | Youth Empowerment Hub | Ghana
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+  
+</body>
+</html>

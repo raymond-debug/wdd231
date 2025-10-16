@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Beads Making",
+    "category": "creative",
+    "description": "Learn to craft beautiful bead jewelry and accessories.",
+    "image": "images/beads.webp"
+  },
+  {
+    "name": "Pastry Arts",
+    "category": "creative",
+    "description": "Master baking techniques and cake decoration.",
+    "image": "images/pastry.webp"
+  },
+  {
+    "name": "Hair Braiding",
+    "category": "creative",
+    "description": "Train in traditional and modern hair styling.",
+    "image": "images/hair.webp"
+  },
+  {
+    "name": "Event Décor",
+    "category": "creative",
+    "description": "Design and decorate for weddings and parties.",
+    "image": "images/decor.webp"
+  },
+  {
+    "name": "CCTV Installation",
+    "category": "technical",
+    "description": "Install and configure security camera systems.",
+    "image": "images/cctv.webp"
+  },
+  {
+    "name": "Mobile Repairs",
+    "category": "technical",
+    "description": "Fix and troubleshoot common phone issues.",
+    "image": "images/mobile.webp"
+  },
+  {
+    "name": "Basic Coding",
+    "category": "technical",
+    "description": "Learn HTML, CSS, and JavaScript fundamentals.",
+    "image": "images/coding.webp"
+  },
+  {
+    "name": "Soap Production",
+    "category": "business",
+    "description": "Make and market handmade soaps and detergents.",
+    "image": "images/soap.webp"
+  },
+  {
+  "name": "Graphic Design Basics",
+  "category": "technical",
+  "description": "Create flyers, posters, and social media graphics using free design tools.",
+  "image": "images/graphic-design.webp"
+  },
+  {
+  "name": "Digital Marketing",
+  "category": "business",
+  "description": "Promote products and services online using social media, email, and SEO.",
+  "image": "images/digital-marketing.webp"
+  },
+  {
+  "name": "Small Business Finance",
+  "category": "business",
+  "description": "Learn budgeting, pricing, and bookkeeping for sustainable business growth.",
+  "image": "images/finance.webp"
+  },
+  {
+  "name": "Customer Service & Sales",
+  "category": "business",
+  "description": "Develop communication and sales skills to attract and retain customers.",
+  "image": "images/sales.webp"
+  }
+]
+  

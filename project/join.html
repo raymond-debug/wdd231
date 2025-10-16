@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="This is the join page of the Youth EmpowermentHub website which collects all user details , submit them, displays various membership types and details">
+    <meta name="author" content="Raymond Nayel">
+    <title>Youth Empowerment Empowerment Hub</title>
+    <link rel="icon" href="images/logo.svg" type="image logo">
+    <meta property="og:title" content="Youth Empowerment Hub Join page">
+    <meta property="og:description" content="Fill out the forms and choose the type of membertship package you want " >
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://raymond-debug.github.io/wdd231/project" >
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.svg" alt="Site Logo" width="800" height="800">
+        <span>Youth EmpowermentHub</span>
+        <button  id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav class="navigation" id="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li class="current"><a href="join.html">Join</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <main class="form-layout">
+        <h1>Join</h1>
+        <form method="get" action="thankyou.html">
+        <label>
+            First Name:
+            <input type="text" name="fname" required title="First Name" autocomplete="given-name">
+        </label>
+
+        <label>
+            Last Name:
+            <input type="text" name="lname" required title="Last Name" autocomplete="family-name">
+        </label>
+
+        <label>
+            Organizational Title:
+            <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+                pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" required title="Email Address" autocomplete="email"
+                placeholder="example@domain.com">
+        </label>
+
+        <label>
+            Mobile Phone:
+            <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel">
+        </label>
+
+        <label>
+            Organization Name:
+            <input type="text" name="orgname" required title="Organization Name" autocomplete="organization">
+        </label>
+
+        <label>
+            Membership Level:
+            <select name="membership" title="Membership Level">
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+            </label>
+
+            <label>
+                Organization Description:
+                <textarea name="description" title="Organization Description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <aside class="membership-cards">
+            <div class="card np" onclick="openModal('np-modal')">
+                <h3>NP Membership</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card bronze" onclick="openModal('bronze-modal')">
+                <h3>Bronze Membership</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card silver" onclick="openModal('silver-modal')">
+                <h3>Silver Membership</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card gold" onclick="openModal('gold-modal')">
+                <h3>Gold Membership</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </aside>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('np-modal')">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <p>Free membership for non-profits. Includes event access and basic listings.</p>
+        </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <p>Includes training sessions, event discounts, and homepage mentions.</p>
+        </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <p>All Bronze benefits plus spotlight advertising and premium listings.</p>
+        </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <p>All Silver benefits plus exclusive event invites and top-tier promotion.</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" width="16" height="16" >
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" >
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+            <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" >
+        </a>
+        </div>
+
+        <p>
+        &copy; <span id="year"></span> | Youth Empowerment Hub | Ghana
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+  
+</body>
+</html>

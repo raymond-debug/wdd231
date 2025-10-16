@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="This is the homepage of the Youth Empowerment Hub Website which displays some programs we ofer, testimonials from our past students and answers to some frequently asked questions  ">
+    <meta name="author" content="Raymond Nayel">
+    <title>Youth Empowerment Hub</title>
+    <link rel="icon" href="images/logo.svg" type="image logo">
+    <meta property="og:title" content="Youth Empowerment Hub homepage">
+    <meta property="og:description" content="Explore our local business members and their services." >
+    <meta property="og:image" content="images/">
+    <meta property="og:url" content="https://raymond-debug.github.io/wdd231/project" >
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.svg" alt="Site Logo" width="800" height="800">
+        <span>Youth EmpowermentHub</span>
+        <button  id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav class="navigation" id="nav-links">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section id="visit-message"></section>
+
+        <section class="hero">
+            <h1>Youth Empowerment Hub</h1>
+            <p>Explore programs that build your future.</p>
+        </section>
+
+        <section class="featured-programs">
+        <h2>Featured Programs</h2>
+        <div class="carousel">
+            <div class="slide active">
+            <img src="images/beads.webp" alt="Beads Making" />
+            <h3>Beads Making</h3>
+            <p>Craft beautiful bead jewelry and accessories.</p>
+            </div>
+            <div class="slide">
+            <img src="images/cctv.webp" alt="CCTV Installation" />
+            <h3>CCTV Installation</h3>
+            <p>Install and configure security camera systems.</p>
+            </div>
+            <div class="slide">
+            <img src="images/pastry.webp" alt="Pastry Arts" />
+            <h3>Pastry Arts</h3>
+            <p>Master baking techniques and cake decoration.</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+        <a href="programs.html" class="cta-button">View All Programs</a>
+        </section>
+
+        <section class="testimonials">
+            <h2>Success Stories</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide active">
+                <blockquote>
+                    “Before joining the Beads Making program, I had no income. Now I sell handmade jewelry at local markets and online. The training was hands-on, supportive, and life-changing.”
+                </blockquote>
+                <p><strong>– Adjoa, Creative Skills Graduate</strong></p>
+                </div>
+                <div class="testimonial-slide">
+                <blockquote>
+                    “The CCTV Installation course gave me the confidence to start my own security business. I’ve installed systems for schools, shops, and even government offices. It opened doors I never imagined.”
+                </blockquote>
+                <p><strong>– Kwesi, Technical Skills Graduate</strong></p>
+                </div>
+                <div class="testimonial-slide">
+                <blockquote>
+                    “Soap Production taught me how to turn a simple idea into a profitable business. I now supply eco-friendly soaps to hotels and salons. The mentorship and marketing tips were gold.”
+                </blockquote>
+                <p><strong>– Efua, Business Skills Graduate</strong></p>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="testimonial-prev">&#10094;</button>
+                <button id="testimonial-next">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>FAQs</h2>
+            <details><summary>What programs are available?</summary><p>We offer creative, technical, and business skills training.</p></details>
+            <details><summary>How do I enroll?</summary><p>Visit our join page and fill out the form.</p></details>
+        </section>
+        <section class="contact-teaser">
+            <h2>Have Questions?</h2>
+            <p>Reach out to us anytime—we’re here to help.</p>
+            <a href="join.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" width="16" height="16" >
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16" >
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+            <img src="images/twitter-x.svg" alt="Twitter" width="16" height="16" >
+        </a>
+        </div>
+
+        <p>
+        &copy; <span id="year"></span> | Youth Empowerment Hub | Ghana
+        </p>
+        <p id="lastModified"></p>
+    </footer> 
+
+    <script src="scripts/navigation.js"></script>
+  
+</body>
+</html>
